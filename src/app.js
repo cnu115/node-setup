@@ -23,7 +23,6 @@ app.use(express.urlencoded({ extended: true }));
 app.get('/', (req, res, next) => {
     logger.info(req.hostname + ' connecting')
     res.send('Welcome to GE Operationational Portal');
-    next();
 });
 
 // handling the errors
